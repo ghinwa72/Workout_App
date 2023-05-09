@@ -11,7 +11,7 @@ List<onboardingModel> onBoardingList = [
       text: TextSpan(
         children: <TextSpan>[
           TextSpan(
-            text: 'Start',
+            text: 'No Start',
             style: TextStyle(
               fontWeight: FontWeight.w900,
               fontFamily: 'Auth',
