@@ -50,10 +50,10 @@ class OnBoarding extends GetView<OnboardingControllerImp> {
                       end: Alignment.bottomCenter,
                       colors: [
                         Colors.transparent,
-                        Colors.white.withOpacity(0.40),
-                        Colors.white,
-                        Colors.white,
-                        Colors.white,
+                        Colors.black54.withOpacity(0.10),
+                        Colors.black.withOpacity(0.70),
+                        Colors.black.withOpacity(0.80),
+                        Colors.black.withOpacity(0.90),
                       ],
                       // adjust stops to control gradient blending
                     ),
@@ -61,7 +61,7 @@ class OnBoarding extends GetView<OnboardingControllerImp> {
                   child: Stack(
                     children: [
                       Transform.translate(
-                        offset: Offset(0, 19.h),
+                        offset: Offset(0, 17.h),
                         child: Container(
                           height: 30.h,
                           child: PageView.builder(
@@ -75,22 +75,17 @@ class OnBoarding extends GetView<OnboardingControllerImp> {
                               return Container(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Stack(
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
                                       children: [
-                                        Image.asset("assets/images/color.png"),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            onBoardingList[i].title,
-                                          ],
-                                        ),
+                                        onBoardingList[i].title,
                                       ],
                                     ),
                                     SizedBox(
-                                      height: 1.8.h,
+                                      height: 2.h,
                                     ),
                                     Container(
                                       padding: EdgeInsets.symmetric(
@@ -113,7 +108,7 @@ class OnBoarding extends GetView<OnboardingControllerImp> {
                         ),
                       ),
                       Transform.translate(
-                        offset: Offset(28.w, 38.h),
+                        offset: Offset(28.w, 40.h),
                         child: GestureDetector(
                           onTap: () {
                             controller.currentPage == 2
@@ -130,15 +125,18 @@ class OnBoarding extends GetView<OnboardingControllerImp> {
                             child: Stack(
                               children: [
                                 Positioned(
-                                  left: 15.w,
-                                  child: Lottie.asset(
-                                    Images.fire,
-                                    height: 8.h,
+                                  left: 18.w,
+                                  top: 1.5.h,
+                                  child: Transform.scale(
+                                    scale: 1.5,
+                                    child: Lottie.asset(
+                                      Images.fire,
+                                    ),
                                   ),
                                 ),
                                 Positioned(
                                   left: 16.w,
-                                  top: 7.h,
+                                  top: 6.5.h,
                                   child: Text(
                                     'Next',
                                     style: TextStyle(
