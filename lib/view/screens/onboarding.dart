@@ -79,7 +79,7 @@ class OnBoarding extends GetView<OnboardingControllerImp> {
                                   children: [
                                     Stack(
                                       children: [
-                                        Image.asset("assets/images/highlighting.png"),
+                                        Image.asset("assets/images/color.png"),
                                         Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,

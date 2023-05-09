@@ -55,7 +55,6 @@ dev_dependencies:
   height_slider: ^1.4.0-nullsafety+1
   font_awesome_flutter: ^10.4.0
   sizer: ^2.0.15
-  shared_preferences: ^2.1.0
   video_player:
   chewie:
   lottie:
