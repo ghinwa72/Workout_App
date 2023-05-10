@@ -81,7 +81,6 @@ class OnboardingScreen extends GetView<OnboardingControllerImp> {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-<<<<<<< HEAD:lib/view/screens/onboarding_screen.dart
                                         Positioned(
                                           left: -20,
                                           top: 10,
@@ -95,9 +94,7 @@ class OnboardingScreen extends GetView<OnboardingControllerImp> {
                                             onBoardingList[i].title,
                                           ],
                                         ),
-=======
                                         onBoardingList[i].title,
->>>>>>> 38a56fe461f147787c593b540cda4b5ffd29db23:lib/view/screens/onboarding.dart
                                       ],
                                     ),
                                     SizedBox(
