@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:workoutlogin/view/screens/gender_screen.dart';
 import '../../controller/auth_controller.dart';
 import '../components/auth_components/auth_button.dart';
 import '../components/auth_components/background_of_auth_screen.dart';
@@ -18,7 +19,7 @@ class AuthScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.grey.shade100,
+      backgroundColor: Colors.grey.shade50,
       body: Stack(
         children: [
           Background(),
@@ -102,6 +103,9 @@ class AuthScreen extends StatelessWidget {
                                         padding: const EdgeInsets.fromLTRB(
                                             100, 85, 15, 0),
                                         child: AuthButton(
+                                          onTap: (){
+                                            Get.to(GenderScreen());
+                                          },
                                           text: 'Login',
                                           color1: Color(0xFFD89FFF),
                                           color2: Color(0xFF76D3FF),
@@ -200,16 +204,18 @@ class AuthScreen extends StatelessWidget {
                                                   : Color(0xFFD89FFF),
                                               shape: BoxShape.circle,
                                             ),
-                                            child: Obx(() => registerController
-                                                    .showRegister.value
-                                                ? Icon(
-                                                    Icons.arrow_upward,
-                                                    color: Colors.white,
-                                                  )
-                                                : Icon(
-                                                    Icons.arrow_downward,
-                                                    color: Colors.white,
-                                                  )),
+                                            child: Obx(
+                                              () => registerController
+                                                      .showRegister.value
+                                                  ? Icon(
+                                                      Icons.arrow_upward,
+                                                      color: Colors.white,
+                                                    )
+                                                  : Icon(
+                                                      Icons.arrow_downward,
+                                                      color: Colors.white,
+                                                    ),
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -271,6 +277,9 @@ class AuthScreen extends StatelessWidget {
                                       padding: const EdgeInsets.fromLTRB(
                                           100, 60, 15, 0),
                                       child: AuthButton(
+                                        onTap: (){
+                                          Get.to(GenderScreen());
+                                        },
                                         color1: Color(0xFFD89FFF),
                                         color2: Color(0xFF76D3FF),
                                         text: 'Signup',

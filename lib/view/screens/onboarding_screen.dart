@@ -2,13 +2,13 @@ import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import 'package:workoutlogin/view/screens/Weight.dart';
+import 'package:workoutlogin/view/screens/weight_screen.dart';
 import '../../../Constants/Images.dart';
 import '../../Model/onboarding_list_model.dart';
 import '../../controller/onboarding_controller.dart';
 import 'package:lottie/lottie.dart';
 
-class OnBoarding extends GetView<OnboardingControllerImp> {
+class OnboardingScreen extends GetView<OnboardingControllerImp> {
   @override
   Widget build(BuildContext context) {
     OnboardingControllerImp controller = Get.put(OnboardingControllerImp());
@@ -79,7 +79,12 @@ class OnBoarding extends GetView<OnboardingControllerImp> {
                                   children: [
                                     Stack(
                                       children: [
-                                        Image.asset("assets/images/color.png"),
+                                        Positioned(
+                                          left: -20,
+                                          top: 10,
+                                          child: Image.asset(
+                                              "assets/images/color.png"),
+                                        ),
                                         Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
@@ -117,7 +122,7 @@ class OnBoarding extends GetView<OnboardingControllerImp> {
                         child: GestureDetector(
                           onTap: () {
                             controller.currentPage == 2
-                                ? Get.to(ImageScaleDemo())
+                                ? Get.to(WeightScreen())
                                 : controller.next();
                           },
                           child: Container(

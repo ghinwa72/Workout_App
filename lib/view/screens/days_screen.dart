@@ -4,12 +4,12 @@ import 'package:sizer/sizer.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 import '../../../Constants/Images.dart';
 import '../../controller/days_controller.dart';
-import '../../controller/image_scale_controller.dart';
-import 'TargetWeight.dart';
+import '../../controller/weight_controller.dart';
+import 'target_weight_screen.dart';
 
-class Days extends StatelessWidget {
-  final ImageScaleController _controller = Get.put(ImageScaleController());
-  final ImageScaleController controller = Get.find();
+class DaysScreen extends StatelessWidget {
+  final WeightController _controller = Get.put(WeightController());
+  final WeightController controller = Get.find();
   final DaysController myController = Get.put(DaysController());
 
   @override

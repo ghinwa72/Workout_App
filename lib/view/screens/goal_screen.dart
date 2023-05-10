@@ -4,13 +4,13 @@ import 'package:sizer/sizer.dart';
 
 import '../../Constants/Images.dart';
 import '../../controller/color_controller.dart';
-import '../../controller/image_scale_controller.dart';
-import 'Illness.dart';
+import '../../controller/weight_controller.dart';
+import 'illness_screen.dart';
 
 
-class Goal extends StatelessWidget {
-  final ImageScaleController _controller = Get.put(ImageScaleController());
-  final ImageScaleController controller = Get.find();
+class GoalScreen extends StatelessWidget {
+  final WeightController _controller = Get.put(WeightController());
+  final WeightController controller = Get.find();
   final ColorController myController = Get.put(ColorController());
 
   @override
@@ -234,7 +234,7 @@ class Goal extends StatelessWidget {
             SizedBox(height: 10.h,),
             GestureDetector(
               onTap: (){
-                Get.to(Illness());
+                Get.to(IllnessScreen());
               },
               child: Container(
                 alignment: Alignment.center,

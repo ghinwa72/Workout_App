@@ -2,10 +2,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class GradientRectSliderTrackShape extends SliderTrackShape
+class GradientSlider extends SliderTrackShape
     with BaseSliderTrackShape {
   /// Create a slider track that draws two rectangles with rounded outer edges.
-  const GradientRectSliderTrackShape();
+  const GradientSlider();
 
   @override
   void paint(

@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
-import '../../../Constants/Images.dart';import '../../controller/image_scale_controller.dart';
-import 'TargetWeight.dart';
+import '../../../Constants/Images.dart';import '../../controller/weight_controller.dart';
+import 'target_weight_screen.dart';
+import 'package:get/get.dart';
 
-class ImageScaleDemo extends StatelessWidget {
-  final ImageScaleController _controller = Get.put(ImageScaleController());
-  final ImageScaleController controller = Get.find();
+import 'age_screen.dart';
+class WeightScreen extends StatelessWidget {
+  final WeightController _controller = Get.put(WeightController());
+  final WeightController controller = Get.find();
 
   @override
   Widget build(BuildContext context) {
@@ -201,24 +203,29 @@ class ImageScaleDemo extends StatelessWidget {
                     offset: Offset(0, 10.h),
                     child: GestureDetector(
                       onTap: () {
-                        Get.to(HeightSelect(
+                        Get.to(TargetWeightScreen(
                             previousPointerValue: controller.weight.value));
                       },
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 8.h,
-                        width: 90.w,
-                        decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(15.sp)),
-                        child: Text(
-                          'Next',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontFamily: 'Kanit',
-                            fontSize: 20.sp,
-                            color: Colors.black,
-                            letterSpacing: 1,
+                      child: GestureDetector(
+                        onTap: (){
+                          Get.to(AgeScreen());
+                        },
+                        child: Container(
+                          alignment: Alignment.center,
+                          height: 8.h,
+                          width: 90.w,
+                          decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(15.sp)),
+                          child: Text(
+                            'Next',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'Kanit',
+                              fontSize: 20.sp,
+                              color: Colors.black,
+                              letterSpacing: 1,
+                            ),
                           ),
                         ),
                       ),

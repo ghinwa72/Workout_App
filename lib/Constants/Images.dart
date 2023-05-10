@@ -4,20 +4,20 @@ class Images {
   static const String source = 'assets';
 
   //images
-  static const String one = '$source/images/15.png';
-  static const String two = '$source/images/16.png';
-  static const String three = '$source/images/17.png';
-  static const String four = '$source/images/18.png';
-  static const String five = '$source/images/19.png';
-  static const String six = '$source/images/20.png';
-  static const String seven = '$source/images/21.png';
-  static const String eight = '$source/images/22.png';
-  static const String nine = '$source/images/23.png';
-  static const String ten = '$source/images/24.png';
-  static const String eleven = '$source/images/25.png';
-  static const String twelve = '$source/images/26.png';
-  static const String thertine = '$source/images/27.png';
-  static const String fourtine = '$source/images/28.png';
+  static const String one = '$source/images/female_weight1.png';
+  static const String two = '$source/images/female_weight2.png';
+  static const String three = '$source/images/female_weight3.png';
+  static const String four = '$source/images/female_weight4.png';
+  static const String five = '$source/images/female_weight5.png';
+  static const String six = '$source/images/female_weight6.png';
+  static const String seven = '$source/images/female_weight7.png';
+  static const String eight = '$source/images/female_weight8.png';
+  static const String nine = '$source/images/female_weight9.png';
+  static const String ten = '$source/images/female_weight10.png';
+  static const String eleven = '$source/images/female_weight11.png';
+  static const String twelve = '$source/images/female_weight12.png';
+  static const String thertine = '$source/images/female_weight13.png';
+  static const String fourtine = '$source/images/female_weight14.png';
   static const String calender = '$source/images/calender.png';
 
   static const String build_muscle = '$source/images/build_muscle.png';

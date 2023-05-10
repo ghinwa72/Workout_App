@@ -3,16 +3,16 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 import '../../../Constants/Images.dart';
-import '../../controller/image_scale_controller.dart';
-import 'Goal.dart';
+import '../../controller/weight_controller.dart';
+import 'goal_screen.dart';
 
-class HeightSelect extends StatelessWidget {
-  final ImageScaleController _controller = Get.put(ImageScaleController());
-  final ImageScaleController controller = Get.find();
+class TargetWeightScreen extends StatelessWidget {
+  final WeightController _controller = Get.put(WeightController());
+  final WeightController controller = Get.find();
 
   final double previousPointerValue;
 
-   HeightSelect({Key? key, required this.previousPointerValue}) : super(key: key);
+   TargetWeightScreen({Key? key, required this.previousPointerValue}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -220,7 +220,7 @@ class HeightSelect extends StatelessWidget {
                     offset: Offset(0, 10.h),
                     child: GestureDetector(
                       onTap: () {
-                        Get.to(Goal());
+                        Get.to(GoalScreen());
                       },
                       child: Container(
                         alignment: Alignment.center,

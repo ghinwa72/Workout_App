@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../Constants/Images.dart';
 
-class ImageScaleController extends GetxController {
+class WeightController extends GetxController {
   final weight = 50.0.obs;
   final scaleFactor = 1.3.obs;
   final minimum = 50.0;

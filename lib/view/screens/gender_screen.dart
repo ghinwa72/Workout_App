@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:get/get.dart';
+import 'package:workoutlogin/view/screens/height_screen.dart';
 
 import '../../controller/gender_controller.dart';
 
@@ -55,7 +56,6 @@ class GenderScreen extends StatelessWidget {
                   itemBuilder: (BuildContext context, int index, real) {
                     return Obx(
                       () => AnimatedContainer(
-
                         duration: Duration(milliseconds: 500),
                         curve: Curves.easeInOut,
                         transform: Matrix4.identity()
@@ -94,7 +94,8 @@ class GenderScreen extends StatelessWidget {
                                   _images[index],
                                   height:
                                       MediaQuery.of(context).size.height / 1.9,
-                                  width: MediaQuery.of(context).size.width / 1.5,
+                                  width:
+                                      MediaQuery.of(context).size.width / 1.5,
                                   fit: BoxFit.fitHeight,
                                 ),
                               ),
@@ -138,31 +139,38 @@ class GenderScreen extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
-            child: Container(
-              height: 48,
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Color(0xFFD89FFF),
-                    Color(0xFF76D3FF),
-                  ],
+            child: GestureDetector(
+              onTap: () {
+                Get.to(
+                  HeightScreen(),
+                );
+              },
+              child: Container(
+                height: 48,
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      Color(0xFFD89FFF),
+                      Color(0xFF76D3FF),
+                    ],
+                  ),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    topRight: Radius.circular(40),
+                    bottomRight: Radius.circular(40),
+                    bottomLeft: Radius.circular(40),
+                  ),
                 ),
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(10),
-                  topRight: Radius.circular(40),
-                  bottomRight: Radius.circular(40),
-                  bottomLeft: Radius.circular(40),
-                ),
-              ),
-              child: Center(
-                child: Text(
-                  "Next",
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
-                      fontFamily: "Auth"),
+                child: Center(
+                  child: Text(
+                    "Next",
+                    style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                        fontFamily: "Auth"),
+                  ),
                 ),
               ),
             ),

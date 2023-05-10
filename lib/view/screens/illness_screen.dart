@@ -5,13 +5,13 @@ import 'package:syncfusion_flutter_gauges/gauges.dart';
 import '../../../Constants/Images.dart';
 
 import '../../controller/color_controller.dart';
-import '../../controller/image_scale_controller.dart';
-import 'Days.dart';
-import 'TargetWeight.dart';
+import '../../controller/weight_controller.dart';
+import 'days_screen.dart';
+import 'target_weight_screen.dart';
 
-class Illness extends StatelessWidget {
-  final ImageScaleController _controller = Get.put(ImageScaleController());
-  final ImageScaleController controller = Get.find();
+class IllnessScreen extends StatelessWidget {
+  final WeightController _controller = Get.put(WeightController());
+  final WeightController controller = Get.find();
   final ColorController myController = Get.put(ColorController());
 
   @override
@@ -289,7 +289,7 @@ class Illness extends StatelessWidget {
             ),
             GestureDetector(
               onTap: (){
-                Get.to(Days());
+                Get.to(DaysScreen());
               },
               child: Container(
                 alignment: Alignment.center,
