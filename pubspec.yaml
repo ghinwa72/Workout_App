@@ -98,6 +98,9 @@ flutter:
     - family: Kanit
       fonts:
         - asset: assets/fonts/Kanit-Bold.ttf
+    - family: LondrinaOutline
+      fonts:
+          - asset: assets/fonts/LondrinaOutline-Regular.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

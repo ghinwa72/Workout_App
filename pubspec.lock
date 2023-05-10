@@ -110,9 +110,16 @@ packages:
     dependency: transitive
     description:
       name: ffi
+<<<<<<< HEAD
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.2"
+=======
+      sha256: a38574032c5f1dd06c4aee541789906c12ccaab8ba01446e800d9c5b79c4a978
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.1"
+>>>>>>> 38a56fe461f147787c593b540cda4b5ffd29db23
   flutter:
     dependency: "direct main"
     description: flutter
@@ -167,16 +174,26 @@ packages:
     dependency: transitive
     description:
       name: html
+<<<<<<< HEAD
       url: "https://pub.dartlang.org"
+=======
+      sha256: "79d498e6d6761925a34ee5ea8fa6dfef38607781d2fa91e37523474282af55cb"
+      url: "https://pub.dev"
+>>>>>>> 38a56fe461f147787c593b540cda4b5ffd29db23
     source: hosted
-    version: "0.15.3"
+    version: "0.15.2"
   http:
     dependency: "direct dev"
     description:
       name: http
+<<<<<<< HEAD
       url: "https://pub.dartlang.org"
+=======
+      sha256: "5895291c13fa8a3bd82e76d5627f69e0d85ca6a30dcac95c4ea19a5d555879c2"
+      url: "https://pub.dev"
+>>>>>>> 38a56fe461f147787c593b540cda4b5ffd29db23
     source: hosted
-    version: "0.13.5"
+    version: "0.13.6"
   http_parser:
     dependency: transitive
     description:
@@ -333,14 +350,24 @@ packages:
     dependency: transitive
     description:
       name: syncfusion_flutter_core
+<<<<<<< HEAD
       url: "https://pub.dartlang.org"
+=======
+      sha256: dfd138a0cea87d6b1c624513b4b620f06515d884d65f1fa5fb93345266c7592c
+      url: "https://pub.dev"
+>>>>>>> 38a56fe461f147787c593b540cda4b5ffd29db23
     source: hosted
     version: "21.2.4"
   syncfusion_flutter_gauges:
     dependency: "direct dev"
     description:
       name: syncfusion_flutter_gauges
+<<<<<<< HEAD
       url: "https://pub.dartlang.org"
+=======
+      sha256: a8e75d7418be1694d39e4b32b2ceacdfcda24edf7e2416af15e0887548313c8e
+      url: "https://pub.dev"
+>>>>>>> 38a56fe461f147787c593b540cda4b5ffd29db23
     source: hosted
     version: "21.2.4"
   term_glyph:
@@ -389,9 +416,14 @@ packages:
     dependency: transitive
     description:
       name: video_player_android
+<<<<<<< HEAD
       url: "https://pub.dartlang.org"
+=======
+      sha256: "318c83a6329032eee2a90eafedf88da94dd0cd8bb2c2d0d5117764da25c697ff"
+      url: "https://pub.dev"
+>>>>>>> 38a56fe461f147787c593b540cda4b5ffd29db23
     source: hosted
-    version: "2.4.7"
+    version: "2.4.6"
   video_player_avfoundation:
     dependency: transitive
     description:
@@ -463,5 +495,5 @@ packages:
     source: hosted
     version: "5.4.1"
 sdks:
-  dart: ">=2.18.0 <3.0.0"
+  dart: ">=2.19.0 <3.0.0"
   flutter: ">=3.3.0"
